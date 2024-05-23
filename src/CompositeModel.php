@@ -8,13 +8,12 @@ declare(strict_types=1);
  * @author     Tran Ngoc Duc <ductn@diepxuan.com>
  * @author     Tran Ngoc Duc <caothu91@gmail.com>
  *
- * @lastupdate 2024-05-23 11:51:26
+ * @lastupdate 2024-05-23 17:35:38
  */
 
-namespace Diepxuan\Simba\SModel;
+namespace Diepxuan\Database\Eloquent;
 
-use Illuminate\Database\Eloquent\Builder;
-use Illuminate\Database\Eloquent\Factories\HasFactory;
+use Database\Eloquent\Traits\HasCompositePrimaryKey;
 use Illuminate\Database\Eloquent\Model;
 
 class CompositeModel extends Model
@@ -22,16 +21,16 @@ class CompositeModel extends Model
     use HasCompositePrimaryKey;
 
     /**
-     * The primary key associated with the table.
-     *
-     * @var string
-     */
-    protected $primaryKey = ['id'];
-    
-    /**
      * Indicates if the IDs are auto-incrementing.
      *
      * @var bool
      */
     public $incrementing = false;
+
+    /**
+     * The primary key associated with the table.
+     *
+     * @var string
+     */
+    protected $primaryKey = ['id'];
 }
