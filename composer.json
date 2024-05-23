@@ -1,0 +1,23 @@
+{
+    "name": "diepxuan/eloquent-composite",
+    "description": "Eloquent Composite Model",
+    "license": "MIT",
+    "authors": [
+      {
+        "name": "Tran Ngoc Duc",
+        "email": "ductn@diepxuan.com"
+      }
+    ],
+    "require": {
+      "illuminate/database": "^11.0"
+    },
+    "autoload": {
+      "psr-4": {
+        "Diepxuan\\Database\\Eloquent": "src/"
+      }
+    },
+    "extra": {
+      "laravel": {}
+    }
+  }
+  
