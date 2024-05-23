@@ -27,4 +27,11 @@ class CompositeModel extends Model
      * @var string
      */
     protected $primaryKey = ['id'];
+    
+    /**
+     * Indicates if the IDs are auto-incrementing.
+     *
+     * @var bool
+     */
+    public $incrementing = false;
 }
